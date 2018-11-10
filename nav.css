@@ -15,17 +15,22 @@ ul {
 
 .color1 {
     height: 100vh;
-    background-color: aqua;
+    background-color: rgb(193, 255, 255);
 }
 
 .color2 {
     height: 100vh;
-    background-color: blueviolet;
+    background-color: rgb(218, 194, 241);
 }
 
 .color3 {
     height: 100vh;
-    background-color: rgb(239, 252, 64);
+    background-color: rgb(255, 252, 204);
+}
+
+.color4 {
+    height: 100vh;
+    background-color: rgb(209, 246, 179);
 }
 
 .fixed {
