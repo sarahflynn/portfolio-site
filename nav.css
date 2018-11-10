@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .color1 {
     height: 100vh;
     background-color: aqua;
@@ -97,6 +101,11 @@ nav {
     display: flex;
 }
 
+nav li a {
+    color: white;
+    text-align: center;
+}
+
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
@@ -118,9 +127,36 @@ nav {
     .navbar li a {
         width: 100%;
         display: block;
-        text-align: center;
         font-size: 35px;
+        line-height: 70px;
+    }
+
+    .navbar li a:hover {
+        background-color: rgb(90, 90, 90);
+    }
+}
+
+@media (min-width: 701px) {
+    .icon {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar li a {
+        flex-grow: 1;
+        display: inline-block;
+        text-align: center;
+        font-size: 30px;
         color: white;
-        height: 70px;
+        line-height: 70px;
+        flex-direction: row;
+        width: 25vw;
+    }
+
+    .navbar li a:hover {
+        background-color: rgb(90, 90, 90);
     }
 }
