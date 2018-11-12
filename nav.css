@@ -193,7 +193,7 @@ h1 {
         text-align: center;
         font-size: 1em;
         color: white;
-        line-height: 5vh;
+        line-height: 50px;
         flex-direction: row;
         width: 25vw;
     }

@@ -49,10 +49,11 @@ window.addEventListener('scroll', function(e) {
     aboutTitle.classList.remove('positioned'); 
   }
 
-  if(heightDifference < window.scrollY - header.offsetHeight) {
+  if(heightDifference < window.scrollY - header.offsetHeight && aboutContent.offsetHeight > window.innerHeight) {
     aboutTitle.classList.remove('fixed'); 
     aboutTitle.classList.add('positioned');
   }
+
 });
 
 // header background
