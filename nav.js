@@ -3,6 +3,9 @@ const nav = document.getElementById('nav');
 const about = document.getElementById('about');
 const checked = document.getElementById('hamburger');
 const navbar = document.getElementById('navbar');
+let aboutContent = document.getElementById('about-content');
+let aboutTitle = document.getElementById('about-title');
+let heightDifference;
 
 function makeFixed() {
     if(window.pageYOffset >= header.offsetHeight) {
@@ -27,27 +30,23 @@ window.onscroll = function() {
     makeFixed();
 }
 
-let aboutContent = document.getElementById('about-content');
-let aboutTitle = document.getElementById('about-title');
-aboutTitle.classList.add('fixed');
-
-
-let useThis;
-
 window.addEventListener('scroll', function(e) {
 
-  useThis = aboutContent.offsetHeight - aboutTitle.offsetHeight;
+  heightDifference = aboutContent.offsetHeight - aboutTitle.offsetHeight;
   
-  if(useThis > window.scrollY) {
+  if (window.scrollY < header.offsetHeight) {
+    aboutTitle.classList.remove('fixed'); 
+    aboutTitle.classList.remove('positioned'); 
+  }
+  
+  if (heightDifference > (window.scrollY - header.offsetHeight) && window.scrollY > header.offsetHeight ) {
     aboutTitle.classList.add('fixed');
     aboutTitle.classList.remove('positioned'); 
-    
   }
-    
-  if(useThis < window.scrollY) {
+
+  if(heightDifference < window.scrollY - header.offsetHeight) {
     aboutTitle.classList.remove('fixed'); 
-    aboutTitle.classList.add('positioned'); 
-    
+    aboutTitle.classList.add('positioned');
   }
 });
 
