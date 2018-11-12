@@ -8,7 +8,6 @@
 body {
     font-size: 1.15em;
     font-weight: 300;
-    line-height: 1.5em;
 }
 
 #header {
@@ -40,10 +39,17 @@ li {
 h4 {
     padding-top: 20px;
     padding-bottom: 8px;
+    font-weight: 500;
 }
 
 canvas {
     position: absolute;
+}
+
+.centered {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -54,6 +60,16 @@ h1 {
     line-height: 1.6em;
     font-weight: 300;
     font-size: 3em;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.h3-top {
+    margin: 40px 30px 0;
 }
 
 .name {
@@ -240,7 +256,7 @@ h1 {
       }
       section .title.fixed {
         position: fixed;
-        margin-top: -100vh;
+        margin-top: calc(-100vh + 50px);
         width: 50%;
         z-index: 100;
       }
