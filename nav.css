@@ -5,6 +5,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    font-size: 1.15em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
 #header {
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     margin: 0;
@@ -19,6 +25,21 @@
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin-bottom: 10px;
+
+}
+
+li {
+    margin-left: 20px;
+    padding-bottom: 8px;
+}
+
+h4 {
+    padding-top: 20px;
+    padding-bottom: 8px;
 }
 
 canvas {
@@ -234,5 +255,13 @@ h1 {
       
       #about {
         background: white;
-      }      
+      }
+
+      .profile {
+          width: 100%;
+      }
+
+      .about-text {
+          padding: 4vw;
+      }
 }
