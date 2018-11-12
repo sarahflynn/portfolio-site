@@ -27,6 +27,30 @@ window.onscroll = function() {
     makeFixed();
 }
 
+let aboutContent = document.getElementById('about-content');
+let aboutTitle = document.getElementById('about-title');
+aboutTitle.classList.add('fixed');
+
+
+let useThis;
+
+window.addEventListener('scroll', function(e) {
+
+  useThis = aboutContent.offsetHeight - aboutTitle.offsetHeight;
+  
+  if(useThis > window.scrollY) {
+    aboutTitle.classList.add('fixed');
+    aboutTitle.classList.remove('positioned'); 
+    
+  }
+    
+  if(useThis < window.scrollY) {
+    aboutTitle.classList.remove('fixed'); 
+    aboutTitle.classList.add('positioned'); 
+    
+  }
+});
+
 // canvas setup
 const canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
