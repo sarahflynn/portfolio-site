@@ -208,15 +208,20 @@ h1 {
         position: relative;
       }
       section .title {
-        background: steelblue;
+        background-color:  #fa3f71;;
         height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
       }
       section .title.fixed {
         position: fixed;
         margin-top: -100vh;
         width: 50%;
         z-index: 100;
-        top: 1417px;
       }
       section .title.positioned {
         position: absolute;
@@ -228,6 +233,6 @@ h1 {
       }
       
       #about {
-        background: lightslategray;
+        background: white;
       }      
 }

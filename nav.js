@@ -37,7 +37,6 @@ window.onscroll = function() {
 window.addEventListener('scroll', function(e) {
 
   heightDifference = aboutContent.offsetHeight - aboutTitle.offsetHeight;
-    console.log('heightDifference', heightDifference, 'window.scrollY', window.scrollY, 'header.offsetHeight', header.offsetHeight, 'minus', (window.scrollY - header.offsetHeight))
   
   if (window.scrollY < header.offsetHeight) {
     aboutTitle.classList.remove('fixed'); 
