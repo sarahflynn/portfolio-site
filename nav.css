@@ -29,12 +29,15 @@ h1 {
     text-align: center;
     color: white;
     z-index: 20;
-    text-shadow: 2px 2px black;
+    text-shadow: 4px 4px black;
     line-height: 1.6em;
+    font-weight: 300;
+    font-size: 3em;
 }
 
 .name {
-    color: #ce466a;
+    color: #fa3f71;
+    font-weight: 500;
 }
 
 ul {
