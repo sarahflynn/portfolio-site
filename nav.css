@@ -81,10 +81,6 @@ ul {
     list-style-type: none;
 }
 
-#about {
-    background-color: rgb(218, 194, 241);
-}
-
 .color3 {
     height: 100vh;
     background-color: rgb(255, 252, 204);
@@ -178,6 +174,10 @@ h1 {
     font-size: 1.5em;
 }
 
+.profile {
+    width: 100%;
+}
+
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
@@ -212,7 +212,39 @@ h1 {
         font-size: 20px
     }
 
-    
+    section .title {
+        background-color:  #fa3f71;;
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2.4em;
+        font-weight: 700;
+    }
+
+    #projects-title {
+        background-color:  #30d1c6;;
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2.4em;
+        font-weight: 700;
+    }
+
+    section .content {
+        background-color: white;
+    }
+
+    .about-text {
+        margin: 5vw;
+    }
+
+    #projects-content h3 {
+        margin-top: 50px;
+    }
 }
 
 @media (min-width: 701px) {
@@ -245,7 +277,6 @@ h1 {
         position: relative;
       }
       section .title {
-        background-color:  #fa3f71;;
         height: 100vh;
         display: flex;
         align-items: center;
@@ -253,6 +284,13 @@ h1 {
         color: white;
         font-size: 2.4em;
         font-weight: 700;
+      }
+
+      #projects-title {
+        background-color:  #3fcbfa;
+      }
+      #about-title {
+        background-color:  #fa3f71;
       }
       section .title.fixed {
         position: fixed;
@@ -273,11 +311,15 @@ h1 {
         background: white;
       }
 
-      .profile {
-          width: 100%;
-      }
-
       .about-text {
           padding: 4vw;
+      }
+
+      #projects h3 {
+          margin-top: 100px;
+      }
+
+      .projects-text {
+          margin: 3vw
       }
 }

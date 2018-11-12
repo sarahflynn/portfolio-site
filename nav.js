@@ -55,6 +55,27 @@ window.addEventListener('scroll', function(e) {
 
 });
 
+window.addEventListener('scroll', function(e) {
+
+  heightDifference = projectsContent.offsetHeight - projectsTitle.offsetHeight;
+  
+  if (window.scrollY < header.offsetHeight) {
+    aboutTitle.classList.remove('fixed'); 
+    aboutTitle.classList.remove('positioned'); 
+  }
+  
+  if (heightDifference > (window.scrollY - header.offsetHeight) && window.scrollY > header.offsetHeight ) {
+    aboutTitle.classList.add('fixed');
+    aboutTitle.classList.remove('positioned'); 
+  }
+
+  if(heightDifference < window.scrollY - header.offsetHeight && aboutContent.offsetHeight > window.innerHeight) {
+    aboutTitle.classList.remove('fixed'); 
+    aboutTitle.classList.add('positioned');
+  }
+
+});
+
 // header background
 // canvas setup
 const canvas = document.querySelector('canvas');
