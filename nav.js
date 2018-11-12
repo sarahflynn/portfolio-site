@@ -6,11 +6,11 @@ const navbar = document.getElementById('navbar');
 
 function makeFixed() {
     if(window.pageYOffset >= header.offsetHeight) {
-        nav.classList.add('fixed');
+        nav.classList.add('navfixed');
         about.classList.add('aboutOffset');
         
     } else if (header.offsetHeight > window.pageYOffset) {
-        nav.classList.remove('fixed');
+        nav.classList.remove('navfixed');
         about.classList.remove('aboutOffset')
     }
 }
