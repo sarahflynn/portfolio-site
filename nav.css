@@ -284,10 +284,16 @@ h1 {
         color: white;
         font-size: 2.4em;
         font-weight: 700;
+        text-decoration: underline;
       }
 
       #projects-title {
-        background-color:  #3fcbfa;
+        color: #fa3f71;
+        text-align: center;
+        font-size: 2.4em;
+        font-weight: 700;
+        margin-top: 50px;
+        text-decoration: underline;
       }
       #about-title {
         background-color:  #fa3f71;
@@ -316,10 +322,12 @@ h1 {
       }
 
       #projects h3 {
-          margin-top: 100px;
+          margin-top: 40px;
       }
 
       .projects-text {
-          margin: 3vw
+          margin: 15px 4vw 50px;
       }
+
+
 }

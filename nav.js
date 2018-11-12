@@ -4,7 +4,9 @@ const about = document.getElementById('about');
 const checked = document.getElementById('hamburger');
 const navbar = document.getElementById('navbar');
 let aboutContent = document.getElementById('about-content');
+let projectsContent = document.getElementById('projects-content');
 let aboutTitle = document.getElementById('about-title');
+let projectsTitle = document.getElementById('projects-title');
 let heightDifference;
 
 // nav
@@ -37,27 +39,6 @@ window.onscroll = function() {
 window.addEventListener('scroll', function(e) {
 
   heightDifference = aboutContent.offsetHeight - aboutTitle.offsetHeight;
-  
-  if (window.scrollY < header.offsetHeight) {
-    aboutTitle.classList.remove('fixed'); 
-    aboutTitle.classList.remove('positioned'); 
-  }
-  
-  if (heightDifference > (window.scrollY - header.offsetHeight) && window.scrollY > header.offsetHeight ) {
-    aboutTitle.classList.add('fixed');
-    aboutTitle.classList.remove('positioned'); 
-  }
-
-  if(heightDifference < window.scrollY - header.offsetHeight && aboutContent.offsetHeight > window.innerHeight) {
-    aboutTitle.classList.remove('fixed'); 
-    aboutTitle.classList.add('positioned');
-  }
-
-});
-
-window.addEventListener('scroll', function(e) {
-
-  heightDifference = projectsContent.offsetHeight - projectsTitle.offsetHeight;
   
   if (window.scrollY < header.offsetHeight) {
     aboutTitle.classList.remove('fixed'); 
