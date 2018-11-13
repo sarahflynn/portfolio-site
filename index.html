@@ -9,16 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <div id="header">
+    <header id="header">
         <canvas></canvas>
         <h1>Hello, I'm <span class="name">Sarah Flynn</span>. <br/> I'm a full stack web developer.</h1>
-    </div>
+    </header>
+
     <nav id="nav" class="nav">
         <div class="icon">
             <input id="hamburger" type="checkbox"/>
             <label for="hamburger" class="hamburger"></label>
         </div>
-        <ul id="navbar">
+        <ul id="navbar" class="navbar">
             <li>
                 <a href="#header">Home</a>
             </li>
@@ -33,8 +34,9 @@
             </li>
         </ul>
     </nav>
+
     <section id="about">
-        <div id="about-title" class="title">About</div>
+        <div id="about-title" class="title">About</div> 
         <div id="about-content" class="content">
             <img src="assets/profile.jpg" alt="Sarah Flynn's professional profile photo" class="profile">
             <div class="about-text">
@@ -46,6 +48,7 @@
                     <li>Redux</li>
                     <li>Vue</li>
                     <li>Plain JS</li>
+                    <li>Webpack</li>
                     <li>PostCSS</li>
                 </ul>
                 <h4>Back End Development with:</h4>
@@ -61,63 +64,71 @@
                     <li>Jest</li>
                 </ul>
             </div>
+            
             <h3 class="h3-top">When I'm not coding</h3>
             <h4 class="centered">I go on adventures...</h4>
             <img src="assets/hike.jpg" alt="On a hike in the Columbia River Gorge" class="profile">
-            <img src="assets/thailand.jpg" alt="On a hike in the Columbia River Gorge" class="profile">
-            <img src="assets/elephants.jpg" alt="On a hike in the Columbia River Gorge" class="profile">
+            <img src="assets/thailand.jpg" alt="On a boat in Thailand" class="profile">
+            <img src="assets/elephants.jpg" alt="At a nature reserve with elephants in Thailand" class="profile">
+            
             <h4 class="centered">...and I work to make a difference in my community.</h4>
-            <img src="assets/albany.jpg" alt="On a hike in the Columbia River Gorge" class="profile">
-            <img src="assets/salem.jpg" alt="On a hike in the Columbia River Gorge" class="profile">
-            <img src="assets/garden.jpg" alt="On a hike in the Columbia River Gorge" class="profile">
+            <img src="assets/albany.jpg" alt="Leading a large focus group" class="profile">
+            <img src="assets/salem.jpg" alt="Public speaking in the state capitol" class="profile">
+            <img src="assets/garden.jpg" alt="End of summer celebration for a community garden I helped start" class="profile">
         </div>
     </section>
+
     <div id="projects">
             <div id="projects-title" class="title">Projects</div>
             <div id="projects-content" class="content">
+                
                 <h3>Jeopardy for Educators</h3>
                 <div class="projects-text">
                     <p>A full stack application built using VueJS on the front end and Node/Express on the back end with a PostgreSQL database, deployed using Heroku. A tool for teachers to create custom jeopardy boards for in-class use. Teachers can create their own custom prompts or search through a database of over 300k actual Jeopardy questions that was scraped from the web.</p>
                 </div>
-                <img src="assets/jeopardy-board.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/jeopardy-database-search.png" alt="Sarah Flynn's professional profile photo" class="profile">
+                <img src="assets/jeopardy-board.png" alt="Jeopardy for Teachers game board" class="profile">
+                <img src="assets/jeopardy-database-search.png" alt="Jeopardy for Teachers clue database search page" class="profile">
+                
                 <h3>DogMatch.com</h3>
                 <div class="projects-text">
                     <p>A full stack application built using VueJS on the front end and Node/Express on the back end with a MongoDB database, custom middleware, and an outside API. TDD development using Jest. A tool for people to post dogs they have available or find their next dog best friend. Allows for filtering based on many criteria including breed, gender, health, personality attributes, and more.</p>
                 </div>
-                <img src="assets/dogmatch.png" alt="Sarah Flynn's professional profile photo" class="profile">
+                <img src="assets/dogmatch.png" alt="Search page of DogMatch.com website" class="profile">
+                
                 <h3>Lewis In Space</h3>
                 <div class="projects-text">
                     <p>A front end application build using VueJS. A game in which Lewis the dog faces slime pirates, an asteroid, and a wampa on his journey home to planet Alchemy. He faces consequences for all of his choices along the way.</p>
                 </div>
-                <img src="assets/star-wars-scroll.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/choose-your-ship.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/choose-your-direction.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/slime-pirates.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/ice-moon.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/furtuna9.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/dog-poker.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/mirror.png" alt="Sarah Flynn's professional profile photo" class="profile">
-                <img src="assets/ending.png" alt="Sarah Flynn's professional profile photo" class="profile">
+                <img src="assets/star-wars-scroll.png" alt="Star Wars game intro scroll page" class="profile">
+                <img src="assets/choose-your-ship.png" alt="Choose your spaceship game page" class="profile">
+                <img src="assets/choose-your-direction.png" alt="Choose your direction game page" class="profile">
+                <img src="assets/slime-pirates.png" alt="Slime Pirate encounter game page" class="profile">
+                <img src="assets/ice-moon.png" alt="Ice Moon encounter game page" class="profile">
+                <img src="assets/furtuna9.png" alt="Asteriod encounter game page" class="profile">
+                <img src="assets/dog-poker.png" alt="Dog poker gambling page" class="profile">
+                <img src="assets/mirror.png" alt="Look in the mirror game page" class="profile">
+                <img src="assets/ending.png" alt="Dark side game ending page" class="profile">
             </div>
         </div>
+
     <div id="contact">
         <div id="contact-title" class="title">Contact</div>
         <div id="contact-content" class="content">
-            <a>
+            <a href="https://www.linkedin.com/in/sarah-flynn/">
                 <img src="assets/LinkedIn.png" alt="Link to Sarah's LinkedIn, linkedin.com/in/sarah-flynn" class="contact-link">
             </a>
-            <a>
-                <img src="assets/Facebook.png" alt="Link to Sarah's LinkedIn, linkedin.com/in/sarah-flynn" class="contact-link">
+            <a href="https://www.facebook.com/sflynn.pdx">
+                <img src="assets/Facebook.png" alt="Link to Sarah's Facebook, facebook.com/sflynn.pdx" class="contact-link">
             </a>
-            <a>
-                <img src="assets/Twitter.png" alt="Link to Sarah's LinkedIn, linkedin.com/in/sarah-flynn" class="contact-link">
+            <a href="https://twitter.com/SarahFlynnCodes">
+                <img src="assets/Twitter.png" alt="Link to Sarah's Twitter, twitter.com/SarahFlynnCodes" class="contact-link">
             </a>
         </div>
         <div id="author">
-            <p id="author">Sarah Flynn &copy 2018</p>
+            <p>Sarah Flynn &copy 2018</p>
         </div>
     </div>
+
     <script src="styles.js"></script>
 </body>
 </html>
