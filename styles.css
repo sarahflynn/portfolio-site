@@ -206,6 +206,8 @@ h1 {
 
 .contact-link {
     padding: 15px;
+    transition: background-color 1s ease-in-out;
+    border-radius: 100px;
 }
 
 #author {
@@ -214,6 +216,11 @@ h1 {
     display: flex;
     justify-content: center;
     padding-top: 35px;
+}
+
+.contact-link:hover {
+    background-color: #fc9cb6;
+    border-radius: 100px;
 }
 
 @media (max-width: 700px) {
@@ -232,6 +239,8 @@ h1 {
 
     #navbar li {
         flex-grow: 1;
+        margin: 0;
+        padding: 0;
     }
 
     #navbar li a {
@@ -239,6 +248,7 @@ h1 {
         display: block;
         font-size: 25px;
         line-height: 60px;
+        transition: background-color 1s ease;
     }
 
     #navbar li a:hover {
@@ -294,6 +304,11 @@ h1 {
         display: flex;
     }
 
+    .navbar li {
+        margin: 0;
+        padding: 0;
+    }
+
     .navbar li a {
         flex-grow: 1;
         display: inline-block;
@@ -303,6 +318,9 @@ h1 {
         line-height: 50px;
         flex-direction: row;
         width: 25vw;
+        transition: background-color 1s ease;
+        margin: 0;
+        padding: 0;
     }
 
     .navbar li a:hover {
