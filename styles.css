@@ -228,7 +228,7 @@ h1 {
         flex-direction: column;
     }
 
-    #navbar {
+    .navbar {
         display: none;
     }
 
